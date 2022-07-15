@@ -5,6 +5,8 @@ let save = document.getElementById("save").addEventListener("click", getText);
 let clear = document.getElementById("clear").addEventListener("click",clearNote)
 let del = document.getElementById("delete").addEventListener("click",deleteNote)
 
+
+
 let listArray = [];
 let noteArray = new Map();
 let counter = 0;
@@ -72,7 +74,7 @@ function getText()
     let list = document.getElementById("list");
     let output = topic
 
-    
+
 
     list.innerHTML += "<li class= liste  id=liste>" + output +"</li>";
     
