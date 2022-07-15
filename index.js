@@ -19,10 +19,25 @@ function deleteNote(){
 
   noteArray.delete(top);
   console.log(noteArray);
-   
+  
+
+  let a = document.getElementById("list").getElementsByTagName('li');
+
+  
+  for(i=0;i<a.length;i++)
+  {
+    if(a[i].innerHTML==top){
+      a[i].remove();
+    }
+  }
+
+  header.value = "";
+  text.value = "";
+
 }
 
 function clearNote(){
+  
   header.value = "";
   text.value = "";
 }
