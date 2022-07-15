@@ -72,6 +72,8 @@ function getText()
     let list = document.getElementById("list");
     let output = topic
 
+    
+
     list.innerHTML += "<li class= liste  id=liste>" + output +"</li>";
     
     let a = document.getElementById("list").getElementsByTagName('li');
