@@ -1,0 +1,171 @@
+@import url('https://css.gg/align-middle.css');
+
+body{
+background: #F1710B;
+background: -webkit-linear-gradient(top left, #F1710B, #C1A5A5);
+background: -moz-linear-gradient(top left, #F1710B, #C1A5A5);
+background: linear-gradient(to bottom right, #F1710B, #C1A5A5);
+height: 100vh;
+
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+
+}
+.textarea{
+  
+  margin-left: 100px;
+  
+  
+}
+
+.save{
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(255, 56, 99);
+  color: white;
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+  border-radius: 50px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+
+.delete{
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(255, 56, 99);
+  color: white;
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+  border-radius: 50px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.clear{
+
+  width: 100px;
+  height: 50px;
+  margin-left: 100px;
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 56, 99);
+  cursor: pointer;
+  transition: 0.2s ease-in;
+
+}
+
+.notepad{
+  width: 400px;
+  height: 300px;
+  background-color: #dddddd;
+  color: rgb(124, 124, 124);
+  padding: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: all 0.5s;
+  resize: none;
+
+}
+
+.header{
+  
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 400px;
+  padding: 10px;
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.search{
+  padding: 5px;
+  width: 250px;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  border-bottom: none;
+}
+
+.storage{
+  margin-left: 100px;
+  width: 250px;
+  height: 300px;
+  background-color: rgb(255, 56, 99);
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 50px;
+}
+
+
+.liste{
+
+  margin: 0;
+  padding: 3px;
+  width: 90%;
+  background-color: rgb(59, 47, 63);
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  color: white;
+  
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  list-style-type:"\1F516";
+
+
+}
+
+
+
+.liste:hover{
+
+  background-color: rgb(119, 95, 128);
+}
+
+.notepad:hover{
+
+  background-color: #ebebeb;
+}
+
+.header:focus{
+
+  outline-style:unset;
+  font-size: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+textarea:focus{
+  cursor: text;
+  color: rgb(75, 75, 75);
+  background-color: white;
+  border-color: #333333;
+  
+} 
+.save:hover {
+
+  rotate: 360deg;
+}
+.clear:hover {
+
+  background-color: rgb(223, 223, 223);
+}
+ 
