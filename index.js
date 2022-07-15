@@ -3,7 +3,7 @@ let text = document.getElementById("notepad");
 let header = document.getElementById("header");
 let save = document.getElementById("save").addEventListener("click", getText);
 let clear = document.getElementById("clear").addEventListener("click",clearNote)
-let del = document.getElementById("delete").addEventListener("click",deleteNote)
+
 
 
 
