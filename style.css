@@ -45,6 +45,7 @@ padding: 0 0 0 0;
   border: 2px solid white;
   cursor: pointer;
   transition: 0.5s;
+
 }
 
 .clear{
@@ -133,7 +134,10 @@ padding: 0 0 0 0;
 }
 
 
+.delete:hover{
 
+  background-color: rgb(255, 104, 137);
+}
 .liste:hover{
 
   background-color: rgb(119, 95, 128);
