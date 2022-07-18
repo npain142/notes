@@ -115,6 +115,7 @@ padding: 0 0 0 0;
   margin-top: 50px;
   text-overflow:clip;
   animation: borders 3s linear infinite forwards alternate;
+  opacity: 0;
 }
 
 
@@ -192,5 +193,52 @@ border-color: #01FF36;
 border-color: -webkit-linear-gradient(bottom left, #01FF36, #FF3533);
 border-color: -moz-linear-gradient(bottom left, #01FF36, #FF3533);
 border-color: linear-gradient(to top right, #01FF36, #FF3533);
+  }
+}
+
+@keyframes popup 
+  
+{
+  0%{
+    opacity: 1;
+    width: 0px;
+    height: 0px;
+
+  }
+
+  50%{
+
+    width: 250px;
+    height: 5px;
+  }
+
+  100%{
+   width: 250px;
+   height: 300px;
+    opacity: 1;
+  }
+}
+
+@keyframes popin 
+  
+{
+  0%{
+    opacity: 1;
+    width: 250px;
+   height: 300px;
+
+  }
+
+  50%{
+    opacity: 1;
+    width: 250px;
+    height: 5px;
+  }
+
+  100%{
+   
+   width: 0px;
+    height: 0px;
+    
   }
 }

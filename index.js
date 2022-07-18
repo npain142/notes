@@ -4,7 +4,7 @@ let header = document.getElementById("header");
 let save = document.getElementById("save").addEventListener("click", getText);
 let clear = document.getElementById("clear").addEventListener("click",clearNote);
 let del = document.getElementById("delete").addEventListener("click",deleteNote);
-
+let storage = document.getElementById("storage");
 
 
 let listArray = [];
@@ -15,7 +15,7 @@ let counter = 0;
 function deleteNote()
 {
 
-  debugger
+  
   let top = header.value;
 
   noteArray.delete(top);
@@ -27,12 +27,19 @@ function deleteNote()
   {
     if(a[i].innerHTML==top){
       a[i].remove();
+      counter--;
     }
   }
 
   header.value = "";
   text.value = "";
 
+  
+
+  if(counter == 0){
+
+    storage.style.animation= "popin 1s ease-in-out 1 forwards"
+  }
 }
 
 
@@ -75,25 +82,29 @@ function getText()
     let list = document.getElementById("list");
     let output = topic
 
-
+    if(counter == 0){
+      storage.style.animation= "popup 1s ease-in-out 1 forwards";
+    }
+    
 
     list.innerHTML += "<li class= liste  id=liste>" + output +"</li>";
-    
+    counter++;
     let a = document.getElementById("list").getElementsByTagName('li');
     for(let i=0;i<a.length;i++)
     {
       a[i].addEventListener("click",function(){load(this.innerHTML)})
+
     }
        
   }
-  counter++;
+  
 }
 
 
 
 function load(d)
 {
-  console.log(d);
+  console.log(counter);
   let head = d;
   let entry = noteArray.get(d);
 
