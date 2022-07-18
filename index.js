@@ -73,8 +73,13 @@ function getText()
   
   text.value = '';
   header.value = '';
-
-  addListElement();
+  if(counter == 0){
+    storage.style.animation= "popup 1s ease-in-out 1 forwards";
+    setTimeout(addListElement,1000);
+  }
+  if(counter>0){
+    addListElement();
+  }
 
   function addListElement()
   {
@@ -82,9 +87,7 @@ function getText()
     let list = document.getElementById("list");
     let output = topic
 
-    if(counter == 0){
-      storage.style.animation= "popup 1s ease-in-out 1 forwards";
-    }
+    
     
 
     list.innerHTML += "<li class= liste  id=liste>" + output +"</li>";
