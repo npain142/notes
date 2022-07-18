@@ -118,6 +118,9 @@ padding: 0 0 0 0;
   opacity: 0;
 }
 
+.all{
+  opacity: 0;
+}
 
 .liste{
 
@@ -134,6 +137,23 @@ padding: 0 0 0 0;
   
 }
 
+.on{
+
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color:#FF3533;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+}
+
+.on:active{
+
+  background-color:#ad2725;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 .delete:hover{
 
