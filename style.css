@@ -21,31 +21,33 @@ padding: 0 0 0 0;
 .save{
   font-size: 30px;
   font-weight: bold;
-  background-color: rgb(255, 56, 99);
+  
   color: white;
   width: 50px;
   height: 50px;
-  margin-left: 100px;
+  margin-left: 00px;
+  position: absolute;
   border-radius: 50px;
   border: 2px solid white;
   cursor: pointer;
-  animation: btns 0.3 ease-in-out 0s 1 forwards paused;
+  background-color: #dddddd;
   
 }
 
 .delete{
   font-size: 30px;
   font-weight: bold;
+  
   background-color: rgb(255, 56, 99);
   color: white;
   width: 50px;
   height: 50px;
-  margin-left: 100px;
+  position: absolute;
   border-radius: 50px;
   border: 2px solid white;
   cursor: pointer;
   transition: 0.5s;
-
+  margin-top: 275px;
 }
 
 .clear{
@@ -118,9 +120,6 @@ padding: 0 0 0 0;
   opacity: 0;
 }
 
-.all{
-  opacity: 0;
-}
 
 .liste{
 
@@ -137,28 +136,20 @@ padding: 0 0 0 0;
   
 }
 
-.on{
 
-  width: 50px;
-  height: 50px;
-  border: 2px solid black;
-  border-radius: 50px;
-  background-color:#FF3533;
-  cursor: pointer;
-  box-shadow: 0 9px #999;
-}
-
-.on:active{
-
-  background-color:#ad2725;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
 
 .delete:hover{
 
   background-color: rgb(255, 104, 137);
 }
+.save:active{
+
+  transform:scale(1.1);
+  
+  background-color: rgb(255, 56, 99);
+  
+}
+
 .liste:hover{
 
   background-color: rgb(119, 95, 128);
@@ -176,7 +167,6 @@ padding: 0 0 0 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 
 textarea:focus{
   cursor: text;
@@ -262,3 +252,4 @@ border-color: linear-gradient(to top right, #01FF36, #FF3533);
     
   }
 }
+

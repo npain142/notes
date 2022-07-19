@@ -5,25 +5,15 @@ let save = document.getElementById("save").addEventListener("click", getText);
 let clear = document.getElementById("clear").addEventListener("click",clearNote);
 let del = document.getElementById("delete").addEventListener("click",deleteNote);
 let storage = document.getElementById("storage");
-let on = document.getElementById("on").addEventListener("click",begin)
-let all = document.getElementById("all");
+
+
 
 let listArray = [];
 let noteArray = new Map();
 let counter = 0;
-let act = false;
 
-function begin(){
-  if(!act){
-    all.style.opacity = 1;
-    act = true;
-  }else if(act){
-    all.style.opacity = 0;
-    act = false;
-  }
-  
 
-}
+
 
 function deleteNote()
 {
@@ -86,6 +76,8 @@ function getText()
   
   text.value = '';
   header.value = '';
+
+  
   if(counter == 0){
     storage.style.animation= "popup 1s ease-in-out 1 forwards";
     setTimeout(addListElement,1000);
@@ -100,6 +92,7 @@ function getText()
     let list = document.getElementById("list");
     let output = topic
 
+    
     
     
 
