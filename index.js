@@ -31,6 +31,10 @@ function deleteNote()
     if(a[i].innerHTML==top){
       a[i].remove();
       counter--;
+      if(counter == 0){
+
+    storage.style.animation= "popin 1s ease-in-out 1 forwards"
+  }
     }
   }
 
@@ -39,10 +43,7 @@ function deleteNote()
 
   
 
-  if(counter == 0){
-
-    storage.style.animation= "popin 1s ease-in-out 1 forwards"
-  }
+  
 }
 
 
